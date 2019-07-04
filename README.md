@@ -1,14 +1,22 @@
 ## [Bi-Directional Cascade Network for Perceptual Edge Detection(BDCN)](https://arxiv.org/pdf/1902.10903.pdf)
+## [Learning to Predict Crisp Boundaries(ECCV 2018)](http://openaccess.thecvf.com/content_ECCV_2018/papers/Ruoxi_Deng_Learning_to_Predict_ECCV_2018_paper.pdf)
 
-This paper proposes a Bi-Directional Cascade Network for edge detection. By introducing a bi-directional cascade structure to enforce each layer to focus on a specific scale, BDCN trains each network layer with a layer-specific supervision. To enrich the multi-scale representations learned with a shallow network, we further introduce a Scale Enhancement
+This code is update the[code](https://github.com/pkuCactus/BDCN) into python3,and add the re_Dice loss which mentioned in Learning to Predict Crisp Boundaries(ECCV 2018).we apply it into face edge detection task,the experiment has achieved good results.
+
+The first paper proposes a Bi-Directional Cascade Network for edge detection. By introducing a bi-directional cascade structure to enforce each layer to focus on a specific scale, BDCN trains each network layer with a layer-specific supervision. To enrich the multi-scale representations learned with a shallow network, we further introduce a Scale Enhancement
 Module (SEM). Here are the code for this paper.
 
+The second paper mainly proposed a useful loss to help the network learning a crisp edge .
+## the experiment results
+(left:the original results,right:add the re_Dice loss results)
+<img src="demo/img1.png" width="150"> <img src="demo/img1_2.png" width="150"><img src="demo/img2.png" width="150"><img src="demo/img2_2.png" width="150"><img src="demo/img3.png" width="150"><img src="demo/img3_2.png" width="150">
 
 ### Prerequisites
 
 - pytorch >= 0.2.0(Our code is based on the 0.2.0)
 - numpy >= 1.11.0
 - pillow >= 3.3.0
+- python3
 
 ### Train and Evaluation
 
