@@ -7,6 +7,8 @@ The first paper proposes a Bi-Directional Cascade Network for edge detection. By
 Module (SEM). Here are the code for this paper.
 
 The second paper mainly proposed a useful loss to help the network learning a crisp edge .
+## the experiment results(left:the original results,right:add the re_Dice loss results)
+<img src="demo/img1.jpg" width="150"> <img src="demo/img1_2.jpg" width="150"><img src="demo/img2.jpg" width="150"><img src="demo/img2_2.jpg" width="150"><img src="demo/img3.jpg" width="150"><img src="demo/img3_2.jpg" width="150">
 
 ### Prerequisites
 
