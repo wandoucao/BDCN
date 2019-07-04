@@ -1,0 +1,665 @@
+2019-06-14 09:00:15 - 1260 - main - 170: - ********************************************************************************
+2019-06-14 09:00:15 - 1260 - main - 171: - the args are the below
+2019-06-14 09:00:15 - 1260 - main - 172: - ********************************************************************************
+2019-06-14 09:00:15 - 1260 - main - 174: - pretrain,params/bdcn_6000.pth
+2019-06-14 09:00:15 - 1260 - main - 174: - dataset,face_real
+2019-06-14 09:00:15 - 1260 - main - 174: - cuda,True
+2019-06-14 09:00:15 - 1260 - main - 174: - resume,None
+2019-06-14 09:00:15 - 1260 - main - 174: - base_lr,1e-06
+2019-06-14 09:00:15 - 1260 - main - 174: - iter_size,10
+2019-06-14 09:00:15 - 1260 - main - 174: - logger,<logging.Logger object at 0x7f9a1b9e9c88>
+2019-06-14 09:00:15 - 1260 - main - 174: - batch_size,1
+2019-06-14 09:00:15 - 1260 - main - 174: - weight_decay,0.0002
+2019-06-14 09:00:15 - 1260 - main - 174: - gpu,0
+2019-06-14 09:00:15 - 1260 - main - 174: - fuse_weight,1.1
+2019-06-14 09:00:15 - 1260 - main - 174: - momentum,0.9
+2019-06-14 09:00:15 - 1260 - main - 174: - k,1
+2019-06-14 09:00:15 - 1260 - main - 174: - gamma,0.1
+2019-06-14 09:00:15 - 1260 - main - 174: - display,20
+2019-06-14 09:00:15 - 1260 - main - 174: - param_dir,params
+2019-06-14 09:00:15 - 1260 - main - 174: - complete_pretrain,None
+2019-06-14 09:00:15 - 1260 - main - 174: - log,log.txt
+2019-06-14 09:00:15 - 1260 - main - 174: - max_iter,40000
+2019-06-14 09:00:15 - 1260 - main - 174: - yita,None
+2019-06-14 09:00:15 - 1260 - main - 174: - average_loss,50
+2019-06-14 09:00:15 - 1260 - main - 174: - side_weight,0.5
+2019-06-14 09:00:15 - 1260 - main - 174: - snapshots,500
+2019-06-14 09:00:15 - 1260 - main - 174: - step_size,10000
+2019-06-14 09:00:15 - 1260 - main - 174: - crop_size,None
+2019-06-14 09:00:15 - 1260 - main - 174: - balance,1.1
+2019-06-14 09:00:15 - 1260 - main - 175: - {'mean_bgr': [104.00699, 116.66877, 122.67892], 'yita': 0.5, 'data_lst': 'face_real_train_pair.txt', 'data_root': '/home/arc-zwq8528/Dataset/face_real_org/train_set/'}
+2019-06-14 09:00:15 - 1260 - main - 176: - ********************************************************************************
+2019-06-14 09:00:19 - 1260 - __init__ - 57: - init the weights of conv1_1.weight from mean 0, std 0.01 gaussian distribution
+2019-06-14 09:00:19 - 1260 - __init__ - 57: - init the weights of conv1_1.bias from mean 0, std 0.01 gaussian distribution
+2019-06-14 09:00:19 - 1260 - __init__ - 57: - init the weights of conv1_2.weight from mean 0, std 0.01 gaussian distribution
+2019-06-14 09:00:19 - 1260 - __init__ - 57: - init the weights of conv1_2.bias from mean 0, std 0.01 gaussian distribution
+2019-06-14 09:00:19 - 1260 - __init__ - 57: - init the weights of conv2_1.weight from mean 0, std 0.01 gaussian distribution
+2019-06-14 09:00:19 - 1260 - __init__ - 57: - init the weights of conv2_1.bias from mean 0, std 0.01 gaussian distribution
+2019-06-14 09:00:19 - 1260 - __init__ - 57: - init the weights of conv2_2.weight from mean 0, std 0.01 gaussian distribution
+2019-06-14 09:00:19 - 1260 - __init__ - 57: - init the weights of conv2_2.bias from mean 0, std 0.01 gaussian distribution
+2019-06-14 09:00:19 - 1260 - __init__ - 57: - init the weights of conv3_1.weight from mean 0, std 0.01 gaussian distribution
+2019-06-14 09:00:19 - 1260 - __init__ - 57: - init the weights of conv3_1.bias from mean 0, std 0.01 gaussian distribution
+2019-06-14 09:00:19 - 1260 - __init__ - 57: - init the weights of conv3_2.weight from mean 0, std 0.01 gaussian distribution
+2019-06-14 09:00:19 - 1260 - __init__ - 57: - init the weights of conv3_2.bias from mean 0, std 0.01 gaussian distribution
+2019-06-14 09:00:19 - 1260 - __init__ - 57: - init the weights of conv3_3.weight from mean 0, std 0.01 gaussian distribution
+2019-06-14 09:00:19 - 1260 - __init__ - 57: - init the weights of conv3_3.bias from mean 0, std 0.01 gaussian distribution
+2019-06-14 09:00:19 - 1260 - __init__ - 57: - init the weights of conv4_1.weight from mean 0, std 0.01 gaussian distribution
+2019-06-14 09:00:19 - 1260 - __init__ - 57: - init the weights of conv4_1.bias from mean 0, std 0.01 gaussian distribution
+2019-06-14 09:00:19 - 1260 - __init__ - 57: - init the weights of conv4_2.weight from mean 0, std 0.01 gaussian distribution
+2019-06-14 09:00:19 - 1260 - __init__ - 57: - init the weights of conv4_2.bias from mean 0, std 0.01 gaussian distribution
+2019-06-14 09:00:19 - 1260 - __init__ - 57: - init the weights of conv4_3.weight from mean 0, std 0.01 gaussian distribution
+2019-06-14 09:00:19 - 1260 - __init__ - 57: - init the weights of conv4_3.bias from mean 0, std 0.01 gaussian distribution
+2019-06-14 09:00:19 - 1260 - __init__ - 57: - init the weights of conv5_1.weight from mean 0, std 0.01 gaussian distribution
+2019-06-14 09:00:19 - 1260 - __init__ - 57: - init the weights of conv5_1.bias from mean 0, std 0.01 gaussian distribution
+2019-06-14 09:00:19 - 1260 - __init__ - 57: - init the weights of conv5_2.weight from mean 0, std 0.01 gaussian distribution
+2019-06-14 09:00:20 - 1260 - __init__ - 57: - init the weights of conv5_2.bias from mean 0, std 0.01 gaussian distribution
+2019-06-14 09:00:20 - 1260 - __init__ - 57: - init the weights of conv5_3.weight from mean 0, std 0.01 gaussian distribution
+2019-06-14 09:00:20 - 1260 - __init__ - 57: - init the weights of conv5_3.bias from mean 0, std 0.01 gaussian distribution
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock1_1.conv.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock1_1.conv.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock1_1.conv1.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock1_1.conv1.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock1_1.conv2.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock1_1.conv2.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock1_1.conv3.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock1_1.conv3.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock1_2.conv.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock1_2.conv.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock1_2.conv1.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock1_2.conv1.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock1_2.conv2.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock1_2.conv2.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock1_2.conv3.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock1_2.conv3.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params conv1_1_down.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params conv1_1_down.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params conv1_2_down.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params conv1_2_down.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params score_dsn1.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params score_dsn1.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params score_dsn1_1.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params score_dsn1_1.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock2_1.conv.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock2_1.conv.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock2_1.conv1.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock2_1.conv1.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock2_1.conv2.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock2_1.conv2.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock2_1.conv3.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock2_1.conv3.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock2_2.conv.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock2_2.conv.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock2_2.conv1.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock2_2.conv1.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock2_2.conv2.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock2_2.conv2.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock2_2.conv3.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock2_2.conv3.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params conv2_1_down.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params conv2_1_down.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params conv2_2_down.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params conv2_2_down.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params score_dsn2.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params score_dsn2.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params score_dsn2_1.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params score_dsn2_1.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock3_1.conv.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock3_1.conv.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock3_1.conv1.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock3_1.conv1.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock3_1.conv2.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock3_1.conv2.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock3_1.conv3.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock3_1.conv3.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock3_2.conv.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock3_2.conv.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock3_2.conv1.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock3_2.conv1.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock3_2.conv2.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock3_2.conv2.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock3_2.conv3.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock3_2.conv3.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock3_3.conv.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock3_3.conv.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock3_3.conv1.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock3_3.conv1.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock3_3.conv2.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock3_3.conv2.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock3_3.conv3.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock3_3.conv3.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params conv3_1_down.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params conv3_1_down.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params conv3_2_down.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params conv3_2_down.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params conv3_3_down.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params conv3_3_down.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params score_dsn3.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params score_dsn3.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params score_dsn3_1.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params score_dsn3_1.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock4_1.conv.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock4_1.conv.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock4_1.conv1.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock4_1.conv1.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock4_1.conv2.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock4_1.conv2.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock4_1.conv3.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock4_1.conv3.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock4_2.conv.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock4_2.conv.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock4_2.conv1.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock4_2.conv1.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock4_2.conv2.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock4_2.conv2.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock4_2.conv3.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock4_2.conv3.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock4_3.conv.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock4_3.conv.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock4_3.conv1.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock4_3.conv1.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock4_3.conv2.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock4_3.conv2.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock4_3.conv3.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock4_3.conv3.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params conv4_1_down.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params conv4_1_down.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params conv4_2_down.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params conv4_2_down.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params conv4_3_down.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params conv4_3_down.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params score_dsn4.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params score_dsn4.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params score_dsn4_1.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params score_dsn4_1.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock5_1.conv.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock5_1.conv.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock5_1.conv1.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock5_1.conv1.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock5_1.conv2.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock5_1.conv2.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock5_1.conv3.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock5_1.conv3.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock5_2.conv.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock5_2.conv.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock5_2.conv1.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock5_2.conv1.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock5_2.conv2.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock5_2.conv2.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock5_2.conv3.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock5_2.conv3.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock5_3.conv.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock5_3.conv.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock5_3.conv1.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock5_3.conv1.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock5_3.conv2.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock5_3.conv2.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock5_3.conv3.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params msblock5_3.conv3.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params conv5_1_down.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params conv5_1_down.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params conv5_2_down.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params conv5_2_down.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params conv5_3_down.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params conv5_3_down.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params score_dsn5.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params score_dsn5.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params score_dsn5_1.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 202: - init params score_dsn5_1.bias 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 190: - init upsamle layer upsample_2.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 190: - init upsamle layer upsample_4.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 190: - init upsamle layer upsample_8.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 190: - init upsamle layer upsample_8_5.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 195: - init params fuse.weight 
+2019-06-14 09:00:20 - 1260 - _initialize_weights - 195: - init params fuse.bias 
+2019-06-14 09:00:20 - 1260 - main - 184: - BDCN(
+  (features): VGG16_C(
+    (conv1_1): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1_1): ReLU(inplace)
+    (conv1_2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1_2): ReLU(inplace)
+    (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=True)
+    (conv2_1): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu2_1): ReLU(inplace)
+    (conv2_2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu2_2): ReLU(inplace)
+    (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=True)
+    (conv3_1): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3_1): ReLU(inplace)
+    (conv3_2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3_2): ReLU(inplace)
+    (conv3_3): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3_3): ReLU(inplace)
+    (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=True)
+    (conv4_1): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu4_1): ReLU(inplace)
+    (conv4_2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu4_2): ReLU(inplace)
+    (conv4_3): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu4_3): ReLU(inplace)
+    (pool4): MaxPool2d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=True)
+    (conv5_1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2))
+    (relu5_1): ReLU(inplace)
+    (conv5_2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2))
+    (relu5_2): ReLU(inplace)
+    (conv5_3): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2))
+    (relu5_3): ReLU(inplace)
+  )
+  (msblock1_1): MSBlock(
+    (conv): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu): ReLU(inplace)
+    (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4))
+    (relu1): ReLU(inplace)
+    (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(8, 8), dilation=(8, 8))
+    (relu2): ReLU(inplace)
+    (conv3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(12, 12), dilation=(12, 12))
+    (relu3): ReLU(inplace)
+  )
+  (msblock1_2): MSBlock(
+    (conv): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu): ReLU(inplace)
+    (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4))
+    (relu1): ReLU(inplace)
+    (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(8, 8), dilation=(8, 8))
+    (relu2): ReLU(inplace)
+    (conv3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(12, 12), dilation=(12, 12))
+    (relu3): ReLU(inplace)
+  )
+  (conv1_1_down): Conv2d(32, 21, kernel_size=(1, 1), stride=(1, 1))
+  (conv1_2_down): Conv2d(32, 21, kernel_size=(1, 1), stride=(1, 1))
+  (score_dsn1): Conv2d(21, 1, kernel_size=(1, 1), stride=(1, 1))
+  (score_dsn1_1): Conv2d(21, 1, kernel_size=(1, 1), stride=(1, 1))
+  (msblock2_1): MSBlock(
+    (conv): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu): ReLU(inplace)
+    (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4))
+    (relu1): ReLU(inplace)
+    (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(8, 8), dilation=(8, 8))
+    (relu2): ReLU(inplace)
+    (conv3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(12, 12), dilation=(12, 12))
+    (relu3): ReLU(inplace)
+  )
+  (msblock2_2): MSBlock(
+    (conv): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu): ReLU(inplace)
+    (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4))
+    (relu1): ReLU(inplace)
+    (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(8, 8), dilation=(8, 8))
+    (relu2): ReLU(inplace)
+    (conv3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(12, 12), dilation=(12, 12))
+    (relu3): ReLU(inplace)
+  )
+  (conv2_1_down): Conv2d(32, 21, kernel_size=(1, 1), stride=(1, 1))
+  (conv2_2_down): Conv2d(32, 21, kernel_size=(1, 1), stride=(1, 1))
+  (score_dsn2): Conv2d(21, 1, kernel_size=(1, 1), stride=(1, 1))
+  (score_dsn2_1): Conv2d(21, 1, kernel_size=(1, 1), stride=(1, 1))
+  (msblock3_1): MSBlock(
+    (conv): Conv2d(256, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu): ReLU(inplace)
+    (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4))
+    (relu1): ReLU(inplace)
+    (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(8, 8), dilation=(8, 8))
+    (relu2): ReLU(inplace)
+    (conv3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(12, 12), dilation=(12, 12))
+    (relu3): ReLU(inplace)
+  )
+  (msblock3_2): MSBlock(
+    (conv): Conv2d(256, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu): ReLU(inplace)
+    (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4))
+    (relu1): ReLU(inplace)
+    (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(8, 8), dilation=(8, 8))
+    (relu2): ReLU(inplace)
+    (conv3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(12, 12), dilation=(12, 12))
+    (relu3): ReLU(inplace)
+  )
+  (msblock3_3): MSBlock(
+    (conv): Conv2d(256, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu): ReLU(inplace)
+    (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4))
+    (relu1): ReLU(inplace)
+    (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(8, 8), dilation=(8, 8))
+    (relu2): ReLU(inplace)
+    (conv3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(12, 12), dilation=(12, 12))
+    (relu3): ReLU(inplace)
+  )
+  (conv3_1_down): Conv2d(32, 21, kernel_size=(1, 1), stride=(1, 1))
+  (conv3_2_down): Conv2d(32, 21, kernel_size=(1, 1), stride=(1, 1))
+  (conv3_3_down): Conv2d(32, 21, kernel_size=(1, 1), stride=(1, 1))
+  (score_dsn3): Conv2d(21, 1, kernel_size=(1, 1), stride=(1, 1))
+  (score_dsn3_1): Conv2d(21, 1, kernel_size=(1, 1), stride=(1, 1))
+  (msblock4_1): MSBlock(
+    (conv): Conv2d(512, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu): ReLU(inplace)
+    (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4))
+    (relu1): ReLU(inplace)
+    (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(8, 8), dilation=(8, 8))
+    (relu2): ReLU(inplace)
+    (conv3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(12, 12), dilation=(12, 12))
+    (relu3): ReLU(inplace)
+  )
+  (msblock4_2): MSBlock(
+    (conv): Conv2d(512, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu): ReLU(inplace)
+    (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4))
+    (relu1): ReLU(inplace)
+    (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(8, 8), dilation=(8, 8))
+    (relu2): ReLU(inplace)
+    (conv3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(12, 12), dilation=(12, 12))
+    (relu3): ReLU(inplace)
+  )
+  (msblock4_3): MSBlock(
+    (conv): Conv2d(512, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu): ReLU(inplace)
+    (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4))
+    (relu1): ReLU(inplace)
+    (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(8, 8), dilation=(8, 8))
+    (relu2): ReLU(inplace)
+    (conv3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(12, 12), dilation=(12, 12))
+    (relu3): ReLU(inplace)
+  )
+  (conv4_1_down): Conv2d(32, 21, kernel_size=(1, 1), stride=(1, 1))
+  (conv4_2_down): Conv2d(32, 21, kernel_size=(1, 1), stride=(1, 1))
+  (conv4_3_down): Conv2d(32, 21, kernel_size=(1, 1), stride=(1, 1))
+  (score_dsn4): Conv2d(21, 1, kernel_size=(1, 1), stride=(1, 1))
+  (score_dsn4_1): Conv2d(21, 1, kernel_size=(1, 1), stride=(1, 1))
+  (msblock5_1): MSBlock(
+    (conv): Conv2d(512, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu): ReLU(inplace)
+    (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4))
+    (relu1): ReLU(inplace)
+    (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(8, 8), dilation=(8, 8))
+    (relu2): ReLU(inplace)
+    (conv3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(12, 12), dilation=(12, 12))
+    (relu3): ReLU(inplace)
+  )
+  (msblock5_2): MSBlock(
+    (conv): Conv2d(512, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu): ReLU(inplace)
+    (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4))
+    (relu1): ReLU(inplace)
+    (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(8, 8), dilation=(8, 8))
+    (relu2): ReLU(inplace)
+    (conv3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(12, 12), dilation=(12, 12))
+    (relu3): ReLU(inplace)
+  )
+  (msblock5_3): MSBlock(
+    (conv): Conv2d(512, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu): ReLU(inplace)
+    (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4))
+    (relu1): ReLU(inplace)
+    (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(8, 8), dilation=(8, 8))
+    (relu2): ReLU(inplace)
+    (conv3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(12, 12), dilation=(12, 12))
+    (relu3): ReLU(inplace)
+  )
+  (conv5_1_down): Conv2d(32, 21, kernel_size=(1, 1), stride=(1, 1))
+  (conv5_2_down): Conv2d(32, 21, kernel_size=(1, 1), stride=(1, 1))
+  (conv5_3_down): Conv2d(32, 21, kernel_size=(1, 1), stride=(1, 1))
+  (score_dsn5): Conv2d(21, 1, kernel_size=(1, 1), stride=(1, 1))
+  (score_dsn5_1): Conv2d(21, 1, kernel_size=(1, 1), stride=(1, 1))
+  (upsample_2): ConvTranspose2d(1, 1, kernel_size=(4, 4), stride=(2, 2), bias=False)
+  (upsample_4): ConvTranspose2d(1, 1, kernel_size=(8, 8), stride=(4, 4), bias=False)
+  (upsample_8): ConvTranspose2d(1, 1, kernel_size=(16, 16), stride=(8, 8), bias=False)
+  (upsample_8_5): ConvTranspose2d(1, 1, kernel_size=(16, 16), stride=(8, 8), bias=False)
+  (fuse): Conv2d(10, 1, kernel_size=(1, 1), stride=(1, 1))
+)
+2019-06-14 09:00:20 - 1260 - train - 111: - ****************************************
+2019-06-14 09:00:20 - 1260 - train - 112: - train images in all are 10959 
+2019-06-14 09:00:20 - 1260 - train - 113: - ****************************************
+2019-06-14 09:00:20 - 1260 - train - 116: - score_dsn4_1.bias: 2e-08
+2019-06-14 09:00:20 - 1260 - train - 116: - score_dsn5_1.weight: 1e-08
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock4_1.conv1.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - features.conv4_1.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock1_1.conv2.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - conv5_1_down.bias: 2e-07
+2019-06-14 09:00:20 - 1260 - train - 116: - conv3_2_down.bias: 2e-07
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock4_3.conv1.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock2_2.conv1.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock2_1.conv.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock1_2.conv1.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - features.conv1_1.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock3_1.conv1.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - score_dsn5_1.bias: 2e-08
+2019-06-14 09:00:20 - 1260 - train - 116: - conv3_2_down.weight: 1e-07
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock3_3.conv2.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock2_2.conv3.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock3_2.conv.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - conv3_1_down.weight: 1e-07
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock3_3.conv1.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock1_2.conv3.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - upsample_4.weight: 0.0
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock2_1.conv2.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - features.conv4_2.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - score_dsn2.weight: 1e-08
+2019-06-14 09:00:20 - 1260 - train - 116: - fuse.bias: 2e-09
+2019-06-14 09:00:20 - 1260 - train - 116: - conv2_2_down.weight: 1e-07
+2019-06-14 09:00:20 - 1260 - train - 116: - score_dsn1_1.weight: 1e-08
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock3_3.conv.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - features.conv1_2.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - score_dsn4_1.weight: 1e-08
+2019-06-14 09:00:20 - 1260 - train - 116: - score_dsn3.bias: 2e-08
+2019-06-14 09:00:20 - 1260 - train - 116: - conv1_1_down.weight: 1e-07
+2019-06-14 09:00:20 - 1260 - train - 116: - upsample_8_5.weight: 0.0
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock4_1.conv.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock1_1.conv.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock4_2.conv2.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - features.conv2_1.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock3_3.conv3.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - features.conv2_2.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - conv4_3_down.bias: 2e-07
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock4_2.conv1.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock5_3.conv.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock3_2.conv.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - features.conv3_1.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - conv2_1_down.weight: 1e-07
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock3_1.conv2.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock2_1.conv3.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - score_dsn2.bias: 2e-08
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock5_3.conv3.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock2_1.conv2.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock1_1.conv3.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - features.conv3_3.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock4_2.conv1.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock4_1.conv3.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - score_dsn3.weight: 1e-08
+2019-06-14 09:00:20 - 1260 - train - 116: - features.conv5_2.bias: 0.00019999999999999998
+2019-06-14 09:00:20 - 1260 - train - 116: - score_dsn1.bias: 2e-08
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock4_3.conv2.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock5_3.conv1.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock2_1.conv1.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock3_3.conv2.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock3_2.conv1.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock4_2.conv.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock5_2.conv.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - conv2_2_down.bias: 2e-07
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock4_1.conv.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock2_1.conv3.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - conv5_1_down.weight: 1e-07
+2019-06-14 09:00:20 - 1260 - train - 116: - upsample_8.weight: 0.0
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock3_3.conv3.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - conv5_3_down.weight: 1e-07
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock2_1.conv1.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - features.conv5_3.weight: 9.999999999999999e-05
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock5_1.conv.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock5_1.conv2.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock3_1.conv3.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock5_1.conv.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock4_3.conv.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock4_1.conv2.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock5_1.conv1.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock5_3.conv1.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - score_dsn2_1.weight: 1e-08
+2019-06-14 09:00:20 - 1260 - train - 116: - fuse.weight: 1e-09
+2019-06-14 09:00:20 - 1260 - train - 116: - features.conv4_3.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock5_3.conv3.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock5_3.conv2.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - features.conv5_3.bias: 0.00019999999999999998
+2019-06-14 09:00:20 - 1260 - train - 116: - conv1_2_down.bias: 2e-07
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock5_2.conv1.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock1_2.conv.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock4_3.conv3.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - score_dsn1_1.bias: 2e-08
+2019-06-14 09:00:20 - 1260 - train - 116: - conv5_3_down.bias: 2e-07
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock1_1.conv3.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock3_1.conv3.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - features.conv5_1.weight: 9.999999999999999e-05
+2019-06-14 09:00:20 - 1260 - train - 116: - conv3_1_down.bias: 2e-07
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock3_2.conv2.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - conv1_2_down.weight: 1e-07
+2019-06-14 09:00:20 - 1260 - train - 116: - conv4_3_down.weight: 1e-07
+2019-06-14 09:00:20 - 1260 - train - 116: - conv4_1_down.weight: 1e-07
+2019-06-14 09:00:20 - 1260 - train - 116: - features.conv2_2.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - features.conv3_2.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - score_dsn5.bias: 2e-08
+2019-06-14 09:00:20 - 1260 - train - 116: - features.conv4_2.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock5_2.conv.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock4_3.conv3.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - score_dsn4.weight: 1e-08
+2019-06-14 09:00:20 - 1260 - train - 116: - score_dsn3_1.bias: 2e-08
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock1_1.conv.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock2_2.conv.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - score_dsn3_1.weight: 1e-08
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock5_2.conv3.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - conv5_2_down.weight: 1e-07
+2019-06-14 09:00:20 - 1260 - train - 116: - conv5_2_down.bias: 2e-07
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock4_3.conv.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock4_2.conv3.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock5_2.conv2.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock4_1.conv1.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - features.conv5_2.weight: 9.999999999999999e-05
+2019-06-14 09:00:20 - 1260 - train - 116: - features.conv3_1.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock5_2.conv2.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - conv4_1_down.bias: 2e-07
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock3_1.conv1.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock1_1.conv2.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock3_2.conv2.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock4_3.conv1.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock2_2.conv1.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock4_3.conv2.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock2_2.conv3.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - conv3_3_down.bias: 2e-07
+2019-06-14 09:00:20 - 1260 - train - 116: - score_dsn4.bias: 2e-08
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock2_2.conv2.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock3_1.conv.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock4_1.conv3.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock3_3.conv1.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock1_1.conv1.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock5_2.conv1.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock5_1.conv3.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - conv4_2_down.bias: 2e-07
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock3_2.conv3.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock5_1.conv1.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock1_2.conv2.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock5_1.conv3.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock1_2.conv2.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock1_2.conv.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - conv2_1_down.bias: 2e-07
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock5_1.conv2.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - features.conv2_1.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - score_dsn1.weight: 1e-08
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock4_2.conv3.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock1_1.conv1.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - upsample_2.weight: 0.0
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock3_2.conv1.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - features.conv1_2.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - features.conv3_2.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock2_2.conv2.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - conv3_3_down.weight: 1e-07
+2019-06-14 09:00:20 - 1260 - train - 116: - features.conv3_3.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock4_2.conv.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - features.conv5_1.bias: 0.00019999999999999998
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock1_2.conv3.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock2_2.conv.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - features.conv4_3.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock3_2.conv3.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - conv4_2_down.weight: 1e-07
+2019-06-14 09:00:20 - 1260 - train - 116: - features.conv4_1.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock2_1.conv.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock3_1.conv2.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - score_dsn5.weight: 1e-08
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock5_3.conv.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock5_3.conv2.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - features.conv1_1.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock4_1.conv2.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock4_2.conv2.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock3_3.conv.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - conv1_1_down.bias: 2e-07
+2019-06-14 09:00:20 - 1260 - train - 116: - score_dsn2_1.bias: 2e-08
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock3_1.conv.weight: 1e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock1_2.conv1.bias: 2e-06
+2019-06-14 09:00:20 - 1260 - train - 116: - msblock5_2.conv3.bias: 2e-06
+2019-06-14 09:01:40 - 1260 - train - 163: - iter: 20, lr: 2.000000e-08, loss: 24248.552884, time using: 79.975676(3.998784s/iter)
+2019-06-14 09:03:06 - 1260 - train - 163: - iter: 40, lr: 2.000000e-08, loss: 23467.738132, time using: 85.851743(4.292587s/iter)
+2019-06-14 09:04:28 - 1260 - train - 163: - iter: 60, lr: 2.000000e-08, loss: 23367.963649, time using: 82.119172(4.105959s/iter)
+2019-06-14 09:05:47 - 1260 - train - 163: - iter: 80, lr: 2.000000e-08, loss: 23305.901683, time using: 79.672704(3.983635s/iter)
+2019-06-14 09:07:08 - 1260 - train - 163: - iter: 100, lr: 2.000000e-08, loss: 23176.164109, time using: 80.756766(4.037838s/iter)
+2019-06-14 09:08:34 - 1260 - train - 163: - iter: 120, lr: 2.000000e-08, loss: 23555.104834, time using: 85.585274(4.279264s/iter)
+2019-06-14 09:09:54 - 1260 - train - 163: - iter: 140, lr: 2.000000e-08, loss: 24111.281007, time using: 79.845870(3.992294s/iter)
+2019-06-14 09:11:10 - 1260 - train - 163: - iter: 160, lr: 2.000000e-08, loss: 23939.028870, time using: 76.772467(3.838623s/iter)
+2019-06-14 09:12:27 - 1260 - train - 163: - iter: 180, lr: 2.000000e-08, loss: 23036.505866, time using: 76.986827(3.849341s/iter)
+2019-06-14 09:13:43 - 1260 - train - 163: - iter: 200, lr: 2.000000e-08, loss: 23050.599474, time using: 75.541500(3.777075s/iter)
+2019-06-14 09:14:59 - 1260 - train - 163: - iter: 220, lr: 2.000000e-08, loss: 23375.216533, time using: 75.731650(3.786582s/iter)
+2019-06-14 09:16:14 - 1260 - train - 163: - iter: 240, lr: 2.000000e-08, loss: 23199.308029, time using: 75.556403(3.777820s/iter)
+2019-06-14 09:17:32 - 1260 - train - 163: - iter: 260, lr: 2.000000e-08, loss: 23390.757012, time using: 77.516169(3.875808s/iter)
+2019-06-14 09:18:48 - 1260 - train - 163: - iter: 280, lr: 2.000000e-08, loss: 23382.021243, time using: 76.372436(3.818622s/iter)
+2019-06-14 09:20:05 - 1260 - train - 163: - iter: 300, lr: 2.000000e-08, loss: 24334.917916, time using: 76.867526(3.843376s/iter)
+2019-06-14 09:21:24 - 1260 - train - 163: - iter: 320, lr: 2.000000e-08, loss: 23508.851782, time using: 78.931279(3.946564s/iter)
+2019-06-14 09:22:42 - 1260 - train - 163: - iter: 340, lr: 2.000000e-08, loss: 23190.867431, time using: 78.284981(3.914249s/iter)
+2019-06-14 09:23:58 - 1260 - train - 163: - iter: 360, lr: 2.000000e-08, loss: 23268.034893, time using: 75.577783(3.778889s/iter)
+2019-06-14 09:25:13 - 1260 - train - 163: - iter: 380, lr: 2.000000e-08, loss: 23408.405724, time using: 75.619817(3.780991s/iter)
+2019-06-14 09:26:29 - 1260 - train - 163: - iter: 400, lr: 2.000000e-08, loss: 23034.294513, time using: 75.726683(3.786334s/iter)
+2019-06-14 09:27:47 - 1260 - train - 163: - iter: 420, lr: 2.000000e-08, loss: 23537.076072, time using: 77.733578(3.886679s/iter)
+2019-06-14 09:29:02 - 1260 - train - 163: - iter: 440, lr: 2.000000e-08, loss: 23744.382643, time using: 74.760113(3.738006s/iter)
+2019-06-14 09:30:17 - 1260 - train - 163: - iter: 460, lr: 2.000000e-08, loss: 23302.966383, time using: 75.043210(3.752160s/iter)
+2019-06-14 09:31:36 - 1260 - train - 163: - iter: 480, lr: 2.000000e-08, loss: 22580.800253, time using: 79.584264(3.979213s/iter)
+2019-06-14 09:33:02 - 1260 - train - 163: - iter: 500, lr: 2.000000e-08, loss: 22663.596673, time using: 85.289055(4.264453s/iter)
+2019-06-14 09:34:17 - 1260 - train - 163: - iter: 520, lr: 2.000000e-08, loss: 22848.101456, time using: 75.129131(3.756457s/iter)
+2019-06-14 09:35:41 - 1260 - train - 163: - iter: 540, lr: 2.000000e-08, loss: 23222.586161, time using: 84.761887(4.238094s/iter)
+2019-06-14 09:36:58 - 1260 - train - 163: - iter: 560, lr: 2.000000e-08, loss: 23599.671345, time using: 76.442372(3.822119s/iter)
+2019-06-14 09:38:14 - 1260 - train - 163: - iter: 580, lr: 2.000000e-08, loss: 23297.624727, time using: 76.121029(3.806051s/iter)
+2019-06-14 09:39:29 - 1260 - train - 163: - iter: 600, lr: 2.000000e-08, loss: 23614.666421, time using: 74.662626(3.733131s/iter)
+2019-06-14 09:40:43 - 1260 - train - 163: - iter: 620, lr: 2.000000e-08, loss: 23933.684951, time using: 73.891843(3.694592s/iter)
+2019-06-14 09:41:58 - 1260 - train - 163: - iter: 640, lr: 2.000000e-08, loss: 23325.334621, time using: 75.060150(3.753008s/iter)
+2019-06-14 09:43:13 - 1260 - train - 163: - iter: 660, lr: 2.000000e-08, loss: 23247.240711, time using: 75.114127(3.755706s/iter)
+2019-06-14 09:44:27 - 1260 - train - 163: - iter: 680, lr: 2.000000e-08, loss: 23403.693642, time using: 74.638646(3.731932s/iter)
+2019-06-14 09:45:41 - 1260 - train - 163: - iter: 700, lr: 2.000000e-08, loss: 23454.721837, time using: 73.984427(3.699221s/iter)
+2019-06-14 09:46:56 - 1260 - train - 163: - iter: 720, lr: 2.000000e-08, loss: 23556.538072, time using: 74.434981(3.721749s/iter)
+2019-06-14 09:48:13 - 1260 - train - 163: - iter: 740, lr: 2.000000e-08, loss: 24009.667651, time using: 76.701257(3.835063s/iter)
+2019-06-14 09:49:28 - 1260 - train - 163: - iter: 760, lr: 2.000000e-08, loss: 23231.401884, time using: 75.512802(3.775640s/iter)
+2019-06-14 09:50:42 - 1260 - train - 163: - iter: 780, lr: 2.000000e-08, loss: 22897.888759, time using: 74.401005(3.720050s/iter)
+2019-06-14 09:51:58 - 1260 - train - 163: - iter: 800, lr: 2.000000e-08, loss: 22725.587524, time using: 75.474901(3.773745s/iter)
+2019-06-14 09:53:14 - 1260 - train - 163: - iter: 820, lr: 2.000000e-08, loss: 23002.282775, time using: 75.777426(3.788871s/iter)
+2019-06-14 09:54:29 - 1260 - train - 163: - iter: 840, lr: 2.000000e-08, loss: 23210.596345, time using: 75.247983(3.762399s/iter)
+2019-06-14 09:55:45 - 1260 - train - 163: - iter: 860, lr: 2.000000e-08, loss: 23870.904904, time using: 75.751272(3.787564s/iter)
+2019-06-14 09:57:00 - 1260 - train - 163: - iter: 880, lr: 2.000000e-08, loss: 24265.082801, time using: 75.499873(3.774994s/iter)
+2019-06-14 09:58:15 - 1260 - train - 163: - iter: 900, lr: 2.000000e-08, loss: 23626.668718, time using: 75.195735(3.759787s/iter)
+2019-06-14 09:59:30 - 1260 - train - 163: - iter: 920, lr: 2.000000e-08, loss: 22960.496866, time using: 74.807544(3.740377s/iter)
+2019-06-14 10:00:45 - 1260 - train - 163: - iter: 940, lr: 2.000000e-08, loss: 22122.725039, time using: 74.328910(3.716446s/iter)
+2019-06-14 10:02:00 - 1260 - train - 163: - iter: 960, lr: 2.000000e-08, loss: 22505.883584, time using: 75.542754(3.777138s/iter)
+2019-06-14 10:03:15 - 1260 - train - 163: - iter: 980, lr: 2.000000e-08, loss: 22499.464059, time using: 74.639506(3.731975s/iter)
+2019-06-14 10:04:33 - 1260 - train - 163: - iter: 1000, lr: 2.000000e-08, loss: 22265.714525, time using: 78.140567(3.907028s/iter)
+2019-06-14 10:05:51 - 1260 - train - 163: - iter: 1020, lr: 2.000000e-08, loss: 21649.749547, time using: 77.936591(3.896830s/iter)
+2019-06-14 10:07:06 - 1260 - train - 163: - iter: 1040, lr: 2.000000e-08, loss: 21619.497385, time using: 75.692448(3.784622s/iter)
+2019-06-14 10:08:23 - 1260 - train - 163: - iter: 1060, lr: 2.000000e-08, loss: 21375.550288, time using: 76.373523(3.818676s/iter)
+2019-06-14 10:09:41 - 1260 - train - 163: - iter: 1080, lr: 2.000000e-08, loss: 22263.691086, time using: 78.479574(3.923979s/iter)
+2019-06-14 10:10:57 - 1260 - train - 163: - iter: 1100, lr: 2.000000e-08, loss: 22664.440326, time using: 75.877006(3.793850s/iter)
+2019-06-14 10:12:07 - 1260 - train - 163: - iter: 1120, lr: 2.000000e-08, loss: 23262.309178, time using: 69.592069(3.479603s/iter)
+2019-06-14 10:13:17 - 1260 - train - 163: - iter: 1140, lr: 2.000000e-08, loss: 23044.340759, time using: 69.852288(3.492614s/iter)
+2019-06-14 10:14:26 - 1260 - train - 163: - iter: 1160, lr: 2.000000e-08, loss: 22751.974586, time using: 69.678519(3.483926s/iter)
+2019-06-14 10:15:37 - 1260 - train - 163: - iter: 1180, lr: 2.000000e-08, loss: 22499.162245, time using: 70.390330(3.519516s/iter)
+2019-06-14 10:16:46 - 1260 - train - 163: - iter: 1200, lr: 2.000000e-08, loss: 21500.128066, time using: 69.727609(3.486380s/iter)
+2019-06-14 10:17:57 - 1260 - train - 163: - iter: 1220, lr: 2.000000e-08, loss: 22192.666670, time using: 70.042746(3.502137s/iter)
+2019-06-14 10:19:06 - 1260 - train - 163: - iter: 1240, lr: 2.000000e-08, loss: 21865.687048, time using: 69.684505(3.484225s/iter)
+2019-06-14 10:20:16 - 1260 - train - 163: - iter: 1260, lr: 2.000000e-08, loss: 22771.295527, time using: 70.216050(3.510802s/iter)
+2019-06-14 10:21:28 - 1260 - train - 163: - iter: 1280, lr: 2.000000e-08, loss: 22825.783671, time using: 71.353448(3.567672s/iter)
+2019-06-14 10:22:38 - 1260 - train - 163: - iter: 1300, lr: 2.000000e-08, loss: 22929.873164, time using: 69.876841(3.493842s/iter)
+2019-06-14 10:23:47 - 1260 - train - 163: - iter: 1320, lr: 2.000000e-08, loss: 21967.401536, time using: 69.769344(3.488467s/iter)
+2019-06-14 10:24:58 - 1260 - train - 163: - iter: 1340, lr: 2.000000e-08, loss: 22186.410609, time using: 70.433800(3.521690s/iter)
+2019-06-14 10:26:08 - 1260 - train - 163: - iter: 1360, lr: 2.000000e-08, loss: 22480.151906, time using: 70.114700(3.505735s/iter)
+2019-06-14 10:27:18 - 1260 - train - 163: - iter: 1380, lr: 2.000000e-08, loss: 22511.969521, time using: 70.194300(3.509715s/iter)
+2019-06-14 10:28:28 - 1260 - train - 163: - iter: 1400, lr: 2.000000e-08, loss: 21314.802325, time using: 69.540609(3.477030s/iter)
+2019-06-14 10:29:38 - 1260 - train - 163: - iter: 1420, lr: 2.000000e-08, loss: 20571.138630, time using: 70.034172(3.501709s/iter)
+2019-06-14 10:30:48 - 1260 - train - 163: - iter: 1440, lr: 2.000000e-08, loss: 21111.494211, time using: 69.878557(3.493928s/iter)
+2019-06-14 10:32:05 - 1260 - train - 163: - iter: 1460, lr: 2.000000e-08, loss: 21710.789637, time using: 77.379244(3.868962s/iter)
+2019-06-14 10:33:15 - 1260 - train - 163: - iter: 1480, lr: 2.000000e-08, loss: 21313.299021, time using: 70.173470(3.508674s/iter)
+2019-06-14 10:34:37 - 1260 - train - 163: - iter: 1500, lr: 2.000000e-08, loss: 21323.628942, time using: 81.481927(4.074096s/iter)

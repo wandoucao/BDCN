@@ -1,0 +1,1 @@
+python /home/arc-zwq8528/BDCN-master_wl_add/train.py -c --pretrain='/home/arc-zwq8528/BDCN-master_wl_add/params_web_wl/bdcn_19000.pth' --param-dir='/home/arc-zwq8528/BDCN-master_wl_add/params_web_wl_add'   
