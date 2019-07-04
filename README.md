@@ -1,7 +1,7 @@
 ## [Bi-Directional Cascade Network for Perceptual Edge Detection(BDCN)](https://arxiv.org/pdf/1902.10903.pdf)
 ## [Learning to Predict Crisp Boundaries(ECCV 2018)](http://openaccess.thecvf.com/content_ECCV_2018/papers/Ruoxi_Deng_Learning_to_Predict_ECCV_2018_paper.pdf)
 
-This code is update the ## [code] into python3,and add the re_Dice loss which mentioned in Learning to Predict Crisp Boundaries(ECCV 2018).we apply it into face edge detection task,the experiment has achieved good results.
+This code is update the[code](https://github.com/pkuCactus/BDCN) into python3,and add the re_Dice loss which mentioned in Learning to Predict Crisp Boundaries(ECCV 2018).we apply it into face edge detection task,the experiment has achieved good results.
 
 The first paper proposes a Bi-Directional Cascade Network for edge detection. By introducing a bi-directional cascade structure to enforce each layer to focus on a specific scale, BDCN trains each network layer with a layer-specific supervision. To enrich the multi-scale representations learned with a shallow network, we further introduce a Scale Enhancement
 Module (SEM). Here are the code for this paper.
