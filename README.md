@@ -9,7 +9,10 @@ Module (SEM). Here are the code for this paper.
 The second paper mainly proposed a useful loss to help the network learning a crisp edge .
 ## the experiment results
 (left:the original results,right:add the re_Dice loss results)
-<img src="demo/img1.png" width="150"> <img src="demo/img1_2.png" width="150"><img src="demo/img2.png" width="150"><img src="demo/img2_2.png" width="150"><img src="demo/img3.png" width="150"><img src="demo/img3_2.png" width="150">
+
+<img src="demo/img1.png" width="100"> <img src="demo/img1_2.png" width="100">
+<img src="demo/img2.png" width="100"><img src="demo/img2_2.png" width="100">
+<img src="demo/img3.png" width="100"><img src="demo/img3_2.png" width="100">
 
 ### Prerequisites
 
